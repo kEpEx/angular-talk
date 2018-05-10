@@ -1,0 +1,183 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+    
+
+   
+
+    <div class="row" *ngIf="slide == 1">
+        <div class="col-sm">
+            <h1>Angular</h1>
+
+            <div style="margin-top: 100px;">
+
+              <h3>Interact with this presentation on: <a href="{{bitlyurl}}">{{bitlyurl}}</a></h3>
+
+            </div>
+
+        </div>
+  
+    </div>
+
+    <div class="row" *ngIf="slide == 2">
+        <div class="col-sm">
+            <h1>Angular</h1>
+
+            <ul>
+              <li>What is Angular?</li>
+              <li>Material</li>
+              <li>angular vs react</li>
+              <li>Angular Versions</li>
+              <li>Upgrading</li>
+              <li>Tesla Tools, helpers</li>
+              <li>Questions?</li>
+            </ul>
+
+        </div>
+  
+    </div>
+
+
+    <div class="row" *ngIf="slide == 3">
+      <div class="col-sm">
+          <h1>What is Angular?</h1>
+
+          <ul>
+            <li>SPA Framework
+                <ul>
+                  <li>Modules</li>
+                  <li>Components</li>
+                  <li>Services</li>
+                  <li>Routing</li>
+                </ul>
+            </li>
+            <li>Typescript</li>
+            <li>DI</li>
+            <li>angularJS vs angular</li>
+            <li>Deploy standalone</li>
+
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="row" *ngIf="slide == 4">
+      <div class="col-sm">
+          <h1>Material</h1>
+
+          <ul>
+            <li>What is Material?</li>
+            <li>Material vs Bootstrap</li>
+          </ul>
+      </div>
+  
+    </div>
+
+    <div class="row" *ngIf="slide == 5">
+        <div class="col-sm">
+            <h1>Angular Versions</h1>
+  
+            <ul>
+              <li>Angular 1 - AngularJS</li>
+              <li>Angular 2
+                <ul>
+              <li>  Typescript</li>
+              <li>  Completely redesigned</li>
+              <li>  Way faster</li>
+              <li>  Way better</li>
+            </ul>
+            </li>
+              <li>Angular 4
+                  <ul>
+              
+              <li>  Amazing Performance Improvements</li>
+              <li>  AOT Compilation</li>
+              </ul>
+            </li>
+              <li>Angular 5
+                  <ul>
+              
+              <li>  Performance Improvements</li>
+              <li>  AOT compilation on serve</li>
+              <li>  Upgraded RxJS 5.5</li>
+              <li>  New HTTP client</li>
+            </ul>
+            </li>
+              <li>Angular 6
+              <ul><li>  Upgraded RxJS 6 (need to change syntax [rxjs-compat]) </li></ul>
+            </li>
+
+            </ul>
+        </div>
+    
+      </div>
+
+
+    <div class="row" *ngIf="slide == 6">
+      <div class="col-sm">
+          <h1>Upgrading</h1>
+
+          <ul>
+            <li>What is Material?</li>
+            <li>Material vs Bootstrap</li>
+          </ul>
+      </div>
+    
+    </div>
+
+    <div class="row" *ngIf="slide == 7">
+      <div class="col-sm">
+          <h1>Tools, helpers</h1>
+
+          <ul>
+            <li>What is Material?</li>
+            <li>Material vs Bootstrap</li>
+          </ul>
+      </div>
+    
+    </div>
+
+    <div class="row" *ngIf="slide == 8">
+        <div class="col-sm">
+            <h1>Questions?</h1>
+  
+            <ul>
+              <li>https://npm.teslamotors.com/search?q=tesla</li>
+            
+            </ul>
+        </div>
+      
+      </div>
+
+
+
+      <div class="row" *ngIf="slide != 1" style="position: fixed; bottom: 0; margin-bottom: 10px;">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-8" style="width: 400px;">
+                      Interact with this presentation on: <a href="{{bitlyurl}}">{{bitlyurl}}</a>
+                  </div>
+                  <div class="col-sm-4" style="height: 70px;">
+                      <ul>
+                          <li *ngFor="let m of messages">{{m}}</li>
+                        </ul>
+                  </div>
+              </div>
+          </div>
+          
+         
+          
+      </div>
+    
+</div>
+
+
+<div>
+ 
+  
+</div>
+
+<div *ngFor="let e of emotes">
+  <img src="assets/img/{{e.emote}}.png" width="150px" style="position: absolute;" [style.right]="e.x+'px'" />
+</div>
