@@ -26,7 +26,7 @@ export class AppComponent {
 
   public interval : any;
 
-  public bitlyurl = 'http://asdsad.com';
+  public bitlyurl = 'https://bit.ly/2KOBzCi';
 
   public messages : string[] = [];
   public emotes : Emote[] = [];

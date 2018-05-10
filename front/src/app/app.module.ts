@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
 
-const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
+const config: SocketIoConfig = { url: 'http://ec2-18-206-155-25.compute-1.amazonaws.com/', options: {} };
 
 
 import { AppComponent } from './app.component';
