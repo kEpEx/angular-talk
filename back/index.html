@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Angular Presentation</title>
+    <title>Angular Presentation by Alfredo Aguirre</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -92,8 +92,8 @@
 
     <script src="/back/socket.io/socket.io.js"></script>
 <script>
-  var socket = io('http://ec2-54-152-215-198.compute-1.amazonaws.com/', {
-    path: '/back'
+  var socket = io.connect('http://ec2-54-152-215-198.compute-1.amazonaws.com/', {
+    path: '/back/socket.io'
   });
 </script>
 
