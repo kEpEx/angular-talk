@@ -92,13 +92,14 @@
 
     <script src="/back/socket.io/socket.io.js"></script>
 <script>
-  var socket = io();
+  var socket = io('http://ec2-54-152-215-198.compute-1.amazonaws.com/', {
+    path: '/back'
+  });
 </script>
 
 
 <script>
     $(function () {
-      var socket = io();
       $('form').submit(function(){
         socket.emit('chat-message', $('#m').val());
         $('#m').val('');
